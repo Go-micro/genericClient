@@ -3,7 +3,7 @@ syntax = "proto3";
 package GenericClient;
 
 service Generic {
-    rpc Printify (Request) returns (Response) {
+    rpc IsExists (Request) returns (Response) {
     }
 }
 
