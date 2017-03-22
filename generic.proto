@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package GenericClient;
+
+service Generic {
+    rpc Printify (Common) returns (Common) {
+    }
+}
+
+message Common {
+    bytes body = 1;
+}
