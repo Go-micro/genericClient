@@ -3,10 +3,14 @@ syntax = "proto3";
 package GenericClient;
 
 service Generic {
-    rpc Printify (Common) returns (Common) {
+    rpc Printify (Request) returns (Response) {
     }
 }
 
-message Common {
+message Request {
+    bytes body = 1;
+}
+
+message Response {
     bytes body = 1;
 }
